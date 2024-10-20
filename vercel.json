@@ -8,7 +8,7 @@
     ],
     "rewrites": [
         {
-            "source": "/api/(.*)",
+            "source": "/api/:path",
             "destination": "/backend/src/function.ts"
         }
     ]
