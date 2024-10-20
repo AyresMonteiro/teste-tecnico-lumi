@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsc",
     "dev": "ts-node ./src/index.ts",
-    "start": "node ./src/index.ts",
+    "start": "node ./dist/src/index.ts",
     "test": "tap ./spec/**/*.spec.ts"
   },
   "keywords": [
