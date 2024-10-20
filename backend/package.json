@@ -4,10 +4,10 @@
   "description": "Teste Técnico para vaga de Desenvolvedor Fullstack Pleno na Lumi.",
   "main": "dist/src/index.js",
   "scripts": {
-    "build": "npx tsc",
-    "dev": "npx ts-node ./src/index.ts",
-    "start": "node ./dist/src/index.js",
-    "test": "npx tap ./spec/**/*.spec.ts"
+    "build": "tsc",
+    "dev": "ts-node ./src/index.ts",
+    "start": "node ./src/index.ts",
+    "test": "tap ./spec/**/*.spec.ts"
   },
   "keywords": [
     "teste",
