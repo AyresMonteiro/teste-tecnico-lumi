@@ -9,7 +9,7 @@
     "rewrites": [
         {
             "source": "/(.*)",
-            "destination": "/backend/src/function.ts"
+            "destination": "/src/function.ts"
         }
     ]
 }
