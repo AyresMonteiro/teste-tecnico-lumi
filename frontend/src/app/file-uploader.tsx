@@ -33,9 +33,7 @@ const FileUpload = () => {
 
     const response = await fetch(process.env.NEXT_PUBLIC_SERVER_API_URL as string, {
       method: 'POST',
-      body: formData,
-      headers: {
-      } as any
+      body: formData
     });
 
     if (!response.ok) {
@@ -119,7 +117,7 @@ const FileUpload = () => {
             <p>Data de Vencimento: {invoice.invoiceBillingDate}</p>
             <p>Valor: R$ {invoice.invoiceValue}</p>
             <ul className="list-disc list-inside grid grid-cols-3 gap-x-4 gap-y-2">
-              {Object.keys(invoice.energyConsumptionByMonths).map((month, monthIndex) => (
+              {Object.keys(invoice.energyConsumptionByMonths).map((month) => (
                 <li key={month} className="flex flex-col justify-center py-2">
                   <span>{month}</span>
                   <ul className="list-disc ml-4">
