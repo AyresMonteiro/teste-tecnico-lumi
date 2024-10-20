@@ -2,8 +2,8 @@
     "version": 2,
     "builds": [
         {
-            "src": "backend/package.json",
-            "use": "@now/node"
+            "src": "backend/src/function.ts",
+            "use": "@vercel/node"
         }
     ],
     "rewrites": [
