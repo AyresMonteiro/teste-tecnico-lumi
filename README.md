@@ -43,3 +43,7 @@ Por fim, instale o projeto e execute-o:
 ```shell
 npm i && npm run dev
 ```
+
+## Como testar se funciona?
+
+Existe um arquivo no caminho `backend/spec/mocks/pdf/invoices/success_invoice.pdf`, que pode ser usado na aplicação para teste.
