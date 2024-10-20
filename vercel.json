@@ -12,11 +12,11 @@
     "rewrites": [
         {
             "source": "/api/(.*)",
-            "destination": "/backend/package.json"
+            "destination": "/backend/$1"
         },
         {
-            "source": "/(.*)",
-            "destination": "/frontend/package.json"
+            "source": "/web/(.*)",
+            "destination": "/frontend/$1"
         }
     ]
 }
