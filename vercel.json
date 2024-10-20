@@ -4,20 +4,12 @@
             "src": "backend/dist/src/index.js",
             "use": "@vercel/node",
             "config": { "includeFiles": ["backend/dist/**"] }
-        },
-        {
-            "src": "frontend/package.json",
-            "use": "@vercel/next"
         }
     ],
     "rewrites": [
         {
             "source": "/api/(.*)",
             "destination": "/backend/$1"
-        },
-        {
-            "source": "/web/(.*)",
-            "destination": "/frontend/$1"
         }
     ]
 }
